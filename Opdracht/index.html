@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene stats>
+        <a-sky color="lightblue"></a-sky>
+        <a-camera>
+          <a-cursor color="black"></a-cursor>
+        </a-camera>
+        <a-box position="0 4 -20" color="red">
+            <a-sound src="sound/622908__theoctopus559__piano-keys-x9.wav" autoplay="true"></a-sound>
+        </a-box>
+        <a-torus position="3 7 -15" color="orange"></a-torus>
+        <a-ring position="3 6 -15" color="purple"></a-ring>
+        <a-box animation="property:position; pauseEvents:mouseenter; resumeEvents:mouseleave; dir:alternate; to:-5 -4 0; dur:8000; loop:true;" position="-5 4 0" color="purple"></a-box>
+        <a-box animation="property:rotation; resumeEvents:mouseenter; autoplay:false; to: 0 360 0; dur:5000; easing:linear; loop:true;" src="img/pexels-ali-alcántara-11145305.jpg" position="3 2 -4" color="brown"></a-box>
+
+        <a-cone position="0 15 0" color="brown"></a-cone>
+        <a-sphere position="0 10 0" color="orange"></a-sphere>
+        <a-sphere animation="property: color; to:#00FF00; dur:3000; easing:linear; " position="-3 4 -8" color="blue"></a-sphere>
+
+        <a-plane rotation="-90 0 0" position="-3 -2 -8" color="orange" height="30" width="30"></a-plane>
+    </a-scene>
+  </body>
+</html>
